@@ -19,3 +19,27 @@ Plataforma integral de biohacking e IoT para la optimización del rendimiento hu
 5. `python manage.py runserver`
 
 **Ubicación:** Santa Elena, Antioquia, Colombia.
+
+zenergy-world/
+├── manage.py
+├── .gitignore
+├── requirements.txt
+├── README.md              <-- Actualizado con la nueva visión
+├── core/                  <-- Configuración del proyecto Django
+│   ├── settings.py
+│   ├── urls.py            <-- Rutas globales (API y Admin)
+│   └── wsgi.py
+├── apps/                  <-- Carpeta contenedora de tus aplicaciones
+│   ├── __init__.py
+│   ├── biohacking/        <-- App de Bitácora, Dosis y Usuarios
+│   │   ├── models.py      <-- Esquema de base de datos que diseñamos
+│   │   ├── serializers.py <-- Conversión de datos para la App móvil
+│   │   ├── views.py       <-- Lógica de negocio (API Endpoints)
+│   │   └── urls.py
+│   └── zbox/              <-- App de IoT y Hardware
+│       ├── models.py      <-- Registro de módulos y lecturas de sensores
+│       ├── consumers.py   <-- Lógica para recibir datos vía MQTT/Websockets
+│       └── views.py
+├── static/                <-- Archivos de tu Landing Page (index.html)
+├── media/                 <-- Fotos de los cultivos y perfil de usuarios
+└── templates/             <-- En caso de que uses vistas HTML desde Django
