@@ -10,18 +10,21 @@ app = FastAPI(
     description="Ecosistema de control asíncrono y encriptación biocinética"
 )
 
+# Sensor validation model for the 1,597 micronodes
 class SensorData(BaseModel):
     temperature: float = Field(..., description="Temperatura interna en °C")
     humidity: float = Field(..., description="Humedad relativa en %")
     co2_ppm: float = Field(..., description="Nivel de CO2 en ppm")
     resonance_phase: bool = Field(..., description="Estado de resonancia booleana H interseca T")
 
+# Seed registry model for Bio-Land-Art geometry
 class BioLandArtSeed(BaseModel):
     batch_id: str
     seed_type: str
     rotation_angle: int = Field(..., ge=0, le=360, description="Sistema de rotación de 90°")
     mass_g: float
 
+# Biokinetic calculation engine to determine environmental intersection points
 class BiokineticEngine:
     def __init__(self, node_id: str):
         self.node_id = node_id
@@ -41,8 +44,10 @@ class BiokineticEngine:
             "geometry_type": "semicircle_inclusion" if is_valid_angle else "unaligned"
         }
 
+# Instantiate the biokinetic engine
 engine = BiokineticEngine(node_id="Z-BOX-60x40-01")
 
+# Endpoint to process environmental telemetry from micronodes
 @app.post("/api/v1/telemetry", status_code=status.HTTP_201_CREATED)
 async def process_telemetry(data: SensorData):
     is_in_resonance = engine.calculate_intersection(data.humidity, data.temperature, 85.0, 24.0)
@@ -57,6 +62,7 @@ async def process_telemetry(data: SensorData):
         "composition_result": engine.compose_state("Ventilacion Forzada", "Resonancia Biológica Validada")
     }
 
+# Endpoint to validate biokinetic seed rotation
 @app.post("/api/v1/seed_art", status_code=status.HTTP_201_CREATED)
 async def register_seed(seed: BioLandArtSeed):
     geom_data = engine.get_geometry_state(seed.rotation_angle)
