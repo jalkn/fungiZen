@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenergy | Engineering the Living Future</title>
+    <title>Zenergy | Z-Box: Intelligent Bio-Hardware</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Space Grotesk', sans-serif; background-color: #0a0a0a; color: #f4f4f4; }
         h1, h2, h3, .brand-font { font-family: 'Orbitron', sans-serif; font-weight: 900; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        
+        /* Updated Blue LED Gradient & Glow */
         .gradient-text { background: linear-gradient(90deg, #94dafb 0%, #1389d4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .hero-glow { position: absolute; top: -10%; left: 50%; transform: translateX(-50%); width: 600px; height: 400px; background: radial-gradient(circle, rgba(19, 137, 212, 0.1) 0%, rgba(10, 10, 10, 0) 70%); z-index: -1; }
         
         .text-zenergy-blue { color: #1389d4; }
         .bg-zenergy-blue { background-color: #1389d4; }
         .border-zenergy-blue { border-color: rgba(19, 137, 212, 0.3); }
-        /* Error de línea 21 corregido: removido shadow-lg del CSS puro */
         .custom-shadow { box-shadow: 0 10px 15px -3px rgba(19, 137, 212, 0.3); }
     </style>
 </head>
@@ -30,7 +31,7 @@
         </div>
         <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-widest text-gray-400 items-center">
             <a href="#zbox" class="hover:text-zenergy-blue transition">Z-Box Node</a>
-            <a href="#biobricks" class="hover:text-zenergy-blue transition">Bio-Materials</a>
+            <a href="#protocols" class="hover:text-zenergy-blue transition">Bio-Protocols</a>
             <a href="https://zenergy.streamlit.app" target="_blank" class="text-zenergy-blue font-bold border-l border-white/10 pl-8 animate-pulse">ARPA LIVE AUDIT</a>
         </div>
     </nav>
@@ -42,7 +43,7 @@
                 The <span class="gradient-text">Living Factory</span> in your hands.
             </h1>
             <p class="text-xl text-gray-400 font-light max-w-lg mb-10 leading-relaxed">
-                We are standardizing mycelium engineering. From <strong>Z-Box</strong> hardware to <strong>Bio-Bricks</strong>, we provide the tools to grow the future of sustainable construction.
+                We are standardizing mycelium engineering with the <strong>Z-Box 60x40</strong>. The first asynchronous hardware node with biokinetic encryption and real-time resonance validation for Bio-Land-Art.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
                 <button onclick="window.open('https://wa.me/573025333130', '_blank')" class="bg-zenergy-blue text-black font-extrabold px-10 py-5 rounded-xl hover:scale-105 transition-all custom-shadow uppercase text-xs tracking-[0.2em]">
@@ -57,35 +58,32 @@
         </div>
     </header>
 
-    <section id="ecosystem" class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
+    <section id="zbox" class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Z-Box Node -->
             <div class="glass p-8 rounded-3xl border-t-2 border-zenergy-blue">
-                <h3 class="brand-font text-lg mb-4 uppercase">Z-Box Node</h3>
-                <p class="text-sm text-gray-400 mb-6">Modular IoT hardware for mycelium production. High-precision environment control for industrial scalability.</p>
+                <h3 class="brand-font text-lg mb-4 uppercase">Z-Box 60x40 Node</h3>
+                <p class="text-sm text-gray-400 mb-6">Hardware with asynchronous FastAPI control and Shelly Cloud automation for reproducible mycology protocols.</p>
                 <ul class="text-[10px] space-y-2 text-zenergy-blue uppercase tracking-widest font-bold">
-                    <li>● Climate Automation</li>
-                    <li>● Real-time Telemetry</li>
+                    <li>● Ecosistema Asíncrono</li>
+                    <li>● Control de Resonancia H ∩ T</li>
                 </ul>
             </div>
 
-            <!-- Bio-Bricks -->
             <div class="glass p-8 rounded-3xl border-t-2 border-white/10">
-                <h3 class="brand-font text-lg mb-4 uppercase">Bio-Bricks</h3>
-                <p class="text-sm text-gray-400 mb-6">Certified living materials. Fire-resistant, acoustic-dampening, and carbon-negative structural units.</p>
+                <h3 class="brand-font text-lg mb-4 uppercase">Bio-Land-Art</h3>
+                <p class="text-sm text-gray-400 mb-6">Cultivo biocinético, validado geométricamente para su visualización en 4K AR y construcción ecológica.</p>
                 <ul class="text-[10px] space-y-2 text-gray-500 uppercase tracking-widest">
-                    <li>● Structural Units</li>
-                    <li>● Thermal Insulation</li>
+                    <li>● Geometría en 90°</li>
+                    <li>● Trazabilidad de Semillas</li>
                 </ul>
             </div>
 
-            <!-- Digital Protocols -->
-            <div class="glass p-8 rounded-3xl border-t-2 border-zenergy-blue bg-white/5">
-                <h3 class="brand-font text-lg mb-4 uppercase">Digital Protocols</h3>
-                <p class="text-sm text-gray-400 mb-6">Encrypted cultivation recipes. Standardized data sets that ensure repeatable results across any Z-Box node globally.</p>
+            <div class="glass p-8 rounded-3xl border-t-2 border-zenergy-blue bg-zenergy-blue/5">
+                <h3 class="brand-font text-lg mb-4 uppercase">ARPA Protocols</h3>
+                <p class="text-sm text-gray-400 mb-6">Motor de trazabilidad que encripta la telemetría biológica como un activo digital seguro e inmutable.</p>
                 <ul class="text-[10px] space-y-2 text-zenergy-blue uppercase tracking-widest font-bold">
-                    <li>● Open-Bio Standard</li>
-                    <li>● Remote Sync</li>
+                    <li>● Validación de Fases</li>
+                    <li>● Data Encriptada</li>
                 </ul>
             </div>
         </div>

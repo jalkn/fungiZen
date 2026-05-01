@@ -1,28 +1,21 @@
 # Zenergy | Bio-Hardware & Mycelium Engineering 🍄🏗️
 
-Zenergy is an infrastructure ecosystem focused on the standardization and auditing of mycelium-based materials. We combine IoT hardware (Z-Box) with auditing protocols (ARPA) to create certified Bio-Bricks for the construction industry.
+Zenergy es una plataforma tecnológica para la producción, estandarización y auditoría biocinética de materiales de construcción a base de micelio y bio-arquitectura.
 
-## 🚀 Key Components
-*   **Z-Box Node**: Domestic and industrial IoT hardware designed to automate fungal growth protocols with high precision[cite: 1, 2].
-*   **Bio-Bricks**: Structural, fire-resistant, and carbon-negative building units grown from mycelium[cite: 1, 3].
-*   **ARPA Audit**: Our proprietary "Resonance" engine that audits environmental data to certify the quality and strength of every biological batch[cite: 1, 2].
-*   **Digital Protocols**: Encrypted growth "recipes" that ensure repeatable biological results globally.
+## 🚀 Innovación Tecnológica (Z-Box 60x40)
+* **Nodo IoT Asíncrono**: Desarrollado en FastAPI, gestiona variables de temperatura y humedad en tiempo real con operadores lógicos de intersección y composición.
+* **Visualización Geométrica**: Protocolo visual de rotación (múltiplos de 90°) para renderizado de estructuras en realidad aumentada 4K.
+* **Auditoría ARPA**: Validación inmutable de los ciclos de crecimiento (resonancia), creando certificados de origen para la industria de la construcción.
 
-## 📂 Repository Structure
-*   `zbox-app/`: Streamlit dashboard for real-time lab logging and ARPA auditing[cite: 2].
-*   `img/`: Visual assets and technical blueprints of the Z-Box[cite: 1, 3].
-*   `index.html`: The gateway to the Zenergy ecosystem[cite: 1].
-*   `corte.py`: Utility script for substrate processing logic.
+## 📂 Estructura del Repositorio
+* `zbox_protocol.py`: Motor en FastAPI encargado de la lógica funcional y de resonancia.
+* `img/`: Visuales y blueprints de la Z-Box.
+* `index.html`: Landing Page actualizada para el comité Socya.
 
-## 🛠️ Technology Stack
-*   **Frontend**: HTML5 / Tailwind CSS (Engineering Aesthetic)[cite: 1].
-*   **Data/Audit**: Streamlit & Pandas for laboratory transparency[cite: 2].
-*   **Hardware**: ESP32 / Shelly Cloud for climate automation.
-*   **Logic**: ARPA (Auditing RPA) for heart-brain resonance synchronization.
-
-## 🌍 Vision: The Bio-Cement of the Future
-We are not just growing mushrooms; we are auditing life. Our goal is to provide companies like Argos with certified bio-materials where every brick carries a digital audit of its strength, purity, and carbon footprint.
+## 🛠️ Tecnologías Empleadas
+* **Hardware de Control**: Shelly Plus H&T / 1PM.
+* **Backend**: FastAPI y Pydantic para el control asíncrono.
+* **Lógica Funcional**: Conjuntos cerrados, intersección de variables biológicas y encriptación biocinética.
 
 ---
-**Global Launch: June 2026 Solstice**  
-*Santa Elena, Antioquia | Zenergy.world*
+**Global Launch: June 2026 Solstice** *Santa Elena, Antioquia | Zenergy.world*
