@@ -24,7 +24,6 @@ class BioLandArtSeed(BaseModel):
     rotation_angle: int = Field(..., ge=0, le=360, description="Sistema de rotación de 90°")
     mass_g: float
 
-# Biokinetic calculation engine to determine environmental intersection points
 class BiokineticEngine:
     def __init__(self, node_id: str):
         self.node_id = node_id
@@ -44,10 +43,8 @@ class BiokineticEngine:
             "geometry_type": "semicircle_inclusion" if is_valid_angle else "unaligned"
         }
 
-# Instantiate the biokinetic engine
 engine = BiokineticEngine(node_id="Z-BOX-60x40-01")
 
-# Endpoint to process environmental telemetry from micronodes
 @app.post("/api/v1/telemetry", status_code=status.HTTP_201_CREATED)
 async def process_telemetry(data: SensorData):
     is_in_resonance = engine.calculate_intersection(data.humidity, data.temperature, 85.0, 24.0)
@@ -62,7 +59,6 @@ async def process_telemetry(data: SensorData):
         "composition_result": engine.compose_state("Ventilacion Forzada", "Resonancia Biológica Validada")
     }
 
-# Endpoint to validate biokinetic seed rotation
 @app.post("/api/v1/seed_art", status_code=status.HTTP_201_CREATED)
 async def register_seed(seed: BioLandArtSeed):
     geom_data = engine.get_geometry_state(seed.rotation_angle)

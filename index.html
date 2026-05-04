@@ -18,6 +18,12 @@
         .bg-zenergy-blue { background-color: #1389d4; }
         .border-zenergy-blue { border-color: rgba(19, 137, 212, 0.3); }
         .custom-shadow { box-shadow: 0 10px 15px -3px rgba(19, 137, 212, 0.3); }
+        
+        .node-map { position: relative; width: 100%; height: 500px; background-color: rgba(255,255,255,0.01); border-radius: 1.5rem; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; }
+        .node-dot { position: absolute; width: 12px; height: 12px; border-radius: 50%; background-color: #1389d4; box-shadow: 0 0 10px rgba(19, 137, 212, 0.6); cursor: pointer; transition: all 0.3s ease; }
+        .node-dot:hover { transform: scale(1.6); background-color: #fff; }
+        .floating-button { position: fixed; bottom: 32px; right: 32px; z-index: 50; background-color: #1389d4; color: #000; font-weight: 900; font-size: 10px; letter-spacing: 0.2em; padding: 16px 32px; border-radius: 12px; box-shadow: 0 10px 25px -3px rgba(19, 137, 212, 0.4); text-transform: uppercase; transition: all 0.3s ease; }
+        .floating-button:hover { transform: translateY(-2px); filter: brightness(1.2); }
     </style>
 </head>
 <body class="antialiased">
@@ -30,7 +36,7 @@
         </div>
         <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-widest text-gray-400 items-center">
             <a href="#zbox" class="hover:text-zenergy-blue transition">Z-Box Node</a>
-            <a href="#protocols" class="hover:text-zenergy-blue transition">Bio-Land-Art</a>
+            <a href="#fractal-map" class="hover:text-zenergy-blue transition">The Big Picture</a>
             <a href="https://github.com/jalkn/zenErgy" target="_blank" class="text-white hover:text-zenergy-blue transition font-bold uppercase tracking-wider">
                 GitHub
             </a>
@@ -59,6 +65,42 @@
             </div>
         </div>
     </header>
+
+    <section id="fractal-map" class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
+        <h2 class="text-2xl md:text-3xl brand-font tracking-tight mb-8 uppercase">
+            The <span class="gradient-text">Big Picture</span>: Mapa de Micronodos
+        </h2>
+        <p class="text-sm text-gray-400 max-w-2xl mb-12">
+            Nodos distribuidos bajo proporciones áureas y secuencias de Fibonacci. Haz clic en los puntos interactivos para establecer comunicación por frecuencia de resonancia hacia la red de Zenergia.
+        </p>
+
+        <div class="node-map">
+            <div class="absolute inset-0 flex items-center justify-center text-[10px] tracking-widest text-gray-700 select-none">
+                <span>[ MATRIZ DE MICELIO H ∩ T ]</span>
+            </div>
+            <a href="https://wa.me/573025333130?text=Hola,%20nodo%201%20activo%20en%20frecuencia%20de%20resonancia%201" target="_blank">
+                <div class="node-dot" style="top: 25%; left: 35%;" title="Frecuencia 1: 1.618 Hz"></div>
+            </a>
+            <a href="https://wa.me/573025333130?text=Hola,%20nodo%202%20activo%20en%20frecuencia%20de%20resonancia%202" target="_blank">
+                <div class="node-dot" style="top: 40%; left: 58%;" title="Frecuencia 2: 2.618 Hz"></div>
+            </a>
+            <a href="https://wa.me/573025333130?text=Hola,%20nodo%203%20activo%20en%20frecuencia%20de%20resonancia%203" target="_blank">
+                <div class="node-dot" style="top: 65%; left: 45%;" title="Frecuencia 3: 4.236 Hz"></div>
+            </a>
+            <a href="https://wa.me/573025333130?text=Hola,%20nodo%205%20activo%20en%20frecuencia%20de%20resonancia%205" target="_blank">
+                <div class="node-dot" style="top: 30%; left: 72%;" title="Frecuencia 5: 6.854 Hz"></div>
+            </a>
+            <a href="https://wa.me/573025333130?text=Hola,%20nodo%208%20activo%20en%20frecuencia%20de%20resonancia%208" target="_blank">
+                <div class="node-dot" style="top: 55%; left: 25%;" title="Frecuencia 8: 11.090 Hz"></div>
+            </a>
+        </div>
+    </section>
+
+    <a href="#fractal-map">
+        <button class="floating-button">
+            ↑ Volver al Mapa
+        </button>
+    </a>
 
     <section id="zbox" class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
