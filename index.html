@@ -19,11 +19,7 @@
         .border-zenergy-blue { border-color: rgba(19, 137, 212, 0.3); }
         .custom-shadow { box-shadow: 0 10px 15px -3px rgba(19, 137, 212, 0.3); }
         
-        .node-map { position: relative; width: 100%; height: 500px; background-color: rgba(255,255,255,0.01); border-radius: 1.5rem; border: 1px solid rgba(255,255,255,0.05); overflow: hidden; }
-        .node-dot { position: absolute; width: 12px; height: 12px; border-radius: 50%; background-color: #1389d4; box-shadow: 0 0 10px rgba(19, 137, 212, 0.6); cursor: pointer; transition: all 0.3s ease; }
-        .node-dot:hover { transform: scale(1.6); background-color: #fff; }
-        .floating-button { position: fixed; bottom: 32px; right: 32px; z-index: 50; background-color: #1389d4; color: #000; font-weight: 900; font-size: 10px; letter-spacing: 0.2em; padding: 16px 32px; border-radius: 12px; box-shadow: 0 10px 25px -3px rgba(19, 137, 212, 0.4); text-transform: uppercase; transition: all 0.3s ease; }
-        .floating-button:hover { transform: translateY(-2px); filter: brightness(1.2); }
+        .symbol-font { font-family: 'Space Grotesk', sans-serif; font-size: 4rem; color: #1389d4; line-height: 1; }
     </style>
 </head>
 <body class="antialiased">
@@ -35,27 +31,24 @@
             <span class="brand-font text-xl tracking-tighter uppercase">ZENERGIA</span>
         </div>
         <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-widest text-gray-400 items-center">
-            <a href="#zbox" class="hover:text-zenergy-blue transition">Z-Box Node</a>
-            <a href="#fractal-map" class="hover:text-zenergy-blue transition">The Big Picture</a>
-            <a href="https://github.com/jalkn/zenErgy" target="_blank" class="text-white hover:text-zenergy-blue transition font-bold uppercase tracking-wider">
-                GitHub
-            </a>
-            <a href="https://zenergy.streamlit.app" target="_blank" class="text-zenergy-blue font-bold border-l border-white/10 pl-8 animate-pulse">ARPA LIVE AUDIT</a>
+            <span class="cursor-default">Mycelium tech-lab</span>
+            <span class="cursor-default border-l border-white/10 pl-4">Bioladrillo</span>
+            <a href="#protocol" class="text-zenergy-blue font-bold border-l border-white/10 pl-4 hover:text-white transition animate-pulse">Protocolo</a>
+            <a href="https://zenergy.streamlit.app" target="_blank" class="text-zenergy-blue font-bold border-l border-white/10 pl-4">ARPA LIVE AUDIT</a>
         </div>
     </nav>
 
     <header class="max-w-6xl mx-auto px-6 pt-12 pb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-            <span class="inline-block px-3 py-1 rounded-full border border-zenergy-blue text-zenergy-blue text-[10px] uppercase tracking-[0.2em] mb-6">Fase 1: Infraestructura Auditada</span>
             <h1 class="text-4xl md:text-5xl mb-8 uppercase tracking-tight leading-none">
-                El ecosistema de <span class="gradient-text">1,597 Micronodos</span> en tus manos.
+                Z-BRICK <span class="gradient-text">+</span> PROTOCOLO
             </h1>
             <p class="text-lg text-gray-400 font-light max-w-lg mb-10 leading-relaxed">
-                Estandarizamos la ingeniería de micelio mediante la <strong>Z-Box 60x40</strong>. El primer hardware asíncrono con control biocinético y validación de ondas estacionales.
+                Nuestros bioladrillos son nodos estructurales diseñados para anclar nuestras instalaciones de Land-art. Combinando micelio y cáscara de chocolo. Cada uno de ellos contiene encriptado el protocolo de nuestro metodo de entrenamiento <strong>ZENERGIA</strong>. 
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
                 <button onclick="window.open('https://wa.me/573025333130', '_blank')" class="bg-zenergy-blue text-black font-extrabold px-8 py-4 rounded-xl hover:scale-105 transition-all custom-shadow uppercase text-xs tracking-[0.2em]">
-                    Reservar Nodo Z-Box
+                    Activar Nodo
                 </button>
             </div>
         </div>
@@ -66,70 +59,71 @@
         </div>
     </header>
 
-    <section id="fractal-map" class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
-        <h2 class="text-2xl md:text-3xl brand-font tracking-tight mb-8 uppercase">
-            The <span class="gradient-text">Big Picture</span>: Mapa de Micronodos
-        </h2>
-        <p class="text-sm text-gray-400 max-w-2xl mb-12">
-            Nodos distribuidos bajo proporciones áureas y secuencias de Fibonacci. Haz clic en los puntos interactivos para establecer comunicación por frecuencia de resonancia hacia la red de Zenergia.
+    <section id="protocol" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
+        <h2 class="text-3xl mb-12 tracking-tight uppercase">Protocolo de Encriptación Biocinética Zenergia</h2>
+        
+        <p class="text-sm text-gray-400 font-light max-w-3xl mb-12 leading-relaxed">
+            Operadores de Movimiento (Funciones). Utilizaremos estos símbolos en las proyecciones de Realidad Aumentada para indicar la acción a ejecutar en los nodos:
         </p>
 
-        <div class="node-map">
-            <div class="absolute inset-0 flex items-center justify-center text-[10px] tracking-widest text-gray-700 select-none">
-                <span>[ MATRIZ DE MICELIO H ∩ T ]</span>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="glass p-8 rounded-2xl border border-white/5 flex flex-col justify-between h-72">
+                <div>
+                    <h3 class="text-xs uppercase tracking-widest mb-2 font-bold text-zenergy-blue">F</h3>
+                    <p class="text-lg font-bold mb-4">Caer</p>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Para aprender</p>
+                </div>
+                <div>
+                    <div class="symbol-font mb-2">&cup;</div>
+                    <div class="text-[10px] uppercase text-gray-600 tracking-wider">&mdash; Inhala</div>
+                </div>
             </div>
-            <a href="https://wa.me/573025333130?text=Hola,%20nodo%201%20activo%20en%20frecuencia%20de%20resonancia%201" target="_blank">
-                <div class="node-dot" style="top: 25%; left: 35%;" title="Frecuencia 1: 1.618 Hz"></div>
-            </a>
-            <a href="https://wa.me/573025333130?text=Hola,%20nodo%202%20activo%20en%20frecuencia%20de%20resonancia%202" target="_blank">
-                <div class="node-dot" style="top: 40%; left: 58%;" title="Frecuencia 2: 2.618 Hz"></div>
-            </a>
-            <a href="https://wa.me/573025333130?text=Hola,%20nodo%203%20activo%20en%20frecuencia%20de%20resonancia%203" target="_blank">
-                <div class="node-dot" style="top: 65%; left: 45%;" title="Frecuencia 3: 4.236 Hz"></div>
-            </a>
-            <a href="https://wa.me/573025333130?text=Hola,%20nodo%205%20activo%20en%20frecuencia%20de%20resonancia%205" target="_blank">
-                <div class="node-dot" style="top: 30%; left: 72%;" title="Frecuencia 5: 6.854 Hz"></div>
-            </a>
-            <a href="https://wa.me/573025333130?text=Hola,%20nodo%208%20activo%20en%20frecuencia%20de%20resonancia%208" target="_blank">
-                <div class="node-dot" style="top: 55%; left: 25%;" title="Frecuencia 8: 11.090 Hz"></div>
-            </a>
+            
+            <div class="glass p-8 rounded-2xl border border-white/5 flex flex-col justify-between h-72">
+                <div>
+                    <h3 class="text-xs uppercase tracking-widest mb-2 font-bold text-zenergy-blue">U</h3>
+                    <p class="text-lg font-bold mb-4">Levantarse</p>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Para evolucionar</p>
+                </div>
+                <div>
+                    <div class="symbol-font mb-2">&cap;</div>
+                    <div class="text-[10px] uppercase text-gray-600 tracking-wider">&mdash; Imagina</div>
+                </div>
+            </div>
+            
+            <div class="glass p-8 rounded-2xl border border-white/5 flex flex-col justify-between h-72">
+                <div>
+                    <h3 class="text-xs uppercase tracking-widest mb-2 font-bold text-zenergy-blue">W</h3>
+                    <p class="text-lg font-bold mb-4">Caminar</p>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Para avanzar</p>
+                </div>
+                <div>
+                    <div class="symbol-font mb-2">&subset;</div>
+                    <div class="text-[10px] uppercase text-gray-600 tracking-wider">&mdash; Exhala</div>
+                </div>
+            </div>
+            
+            <div class="glass p-8 rounded-2xl border border-white/5 flex flex-col justify-between h-72">
+                <div>
+                    <h3 class="text-xs uppercase tracking-widest mb-2 font-bold text-zenergy-blue">J</h3>
+                    <p class="text-lg font-bold mb-4">Saltar</p>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed">Para trascender</p>
+                </div>
+                <div>
+                    <div class="symbol-font mb-2">&circ;</div>
+                    <div class="text-[10px] uppercase text-gray-600 tracking-wider">&mdash; Crea</div>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <a href="#fractal-map">
-        <button class="floating-button">
-            ↑ Volver al Mapa
-        </button>
-    </a>
-
-    <section id="zbox" class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass p-8 rounded-3xl border-t-2 border-zenergy-blue">
-                <h3 class="brand-font text-lg mb-4 uppercase">Hardware Z-Box</h3>
-                <p class="text-sm text-gray-400 mb-6">Control asíncrono (FastAPI) y automatización para registrar lotes de sustrato y biomasa con gran precisión.</p>
-                <ul class="text-[10px] space-y-2 text-zenergy-blue uppercase tracking-widest font-bold">
-                    <li>● Control de 34 a 55 Ondas</li>
-                    <li>● Ecosistema Asíncrono</li>
-                </ul>
+        
+        <div class="mt-12 p-8 glass rounded-2xl border border-white/5 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+                <h3 class="text-sm uppercase tracking-widest mb-2 font-bold">Protocolo 60FUWJ60</h3>
+                <p class="text-xs text-gray-400 font-light max-w-2xl">
+                    Bloques estructurados donde cada letra se ejecuta con precisión matemática, desde la desconstrucción hasta la sincronización total con el solsticio.
+                </p>
             </div>
-
-            <div class="glass p-8 rounded-3xl border-t-2 border-white/10">
-                <h3 class="brand-font text-lg mb-4 uppercase">Bio-Land-Art</h3>
-                <p class="text-sm text-gray-400 mb-6">Huevos semilla y bloques validados geométricamente para renderizado visual en 4K AR y construcción ecológica.</p>
-                <ul class="text-[10px] space-y-2 text-gray-500 uppercase tracking-widest">
-                    <li>● Geometría múltiple de 90°</li>
-                    <li>● Trazabilidad de lotes</li>
-                </ul>
-            </div>
-
-            <div class="glass p-8 rounded-3xl border-t-2 border-zenergy-blue bg-zenergy-blue/5">
-                <h3 class="brand-font text-lg mb-4 uppercase">Protocolo ARPA</h3>
-                <p class="text-sm text-gray-400 mb-6">Encripta y sella la telemetría de los micronodos, certificando cada lote como un activo digital.</p>
-                <ul class="text-[10px] space-y-2 text-zenergy-blue uppercase tracking-widest font-bold">
-                    <li>● Validación de Fases H ∩ T</li>
-                    <li>● Hash Biocinético</li>
-                </ul>
-            </div>
+            <pre class="bg-black/40 border border-white/10 p-4 rounded-xl text-xs text-zenergy-blue tracking-widest font-mono">12 SETS &times; 5 REPS = 60</pre>
         </div>
     </section>
 
